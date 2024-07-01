@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+body {
+  background-image: url('./assets/images/2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif 
+}
+
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  border: 2px solid black;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+  box-sizing: border-box; 
+  width: 100%;
+}
+
+.logo {
+  height: 6em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+
+.logo, .save-button, .regenerate-button:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.title-box, .description-box {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.63);
+  border-radius: 5px;
+  font-family: 'Poppins', san-serif;
+  width: 90%;
+}
+
+.title-box{
+  text-align: center;
+  font-size:24px;
+  font-weight:bolder;
+  height: 10%;
+}
+
+.description-container{
+  position:relative;
+  width:100%;
+}
+.description-box{
+  margin: 10px;
+  height: 200px;
+  font-size: 15px;
+  text-align:left;
+  resize:none;
+}
+
+.send-icon {
+  position: absolute;
+  width:20px;
+  bottom:10%;
+  right:6%;
+  cursor: pointer;
+}
+
+
+.button-container{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+}
+
+.save-button, .regenerate-button{
+  border-radius: 15px;
+  padding: 10px 0px;
+  font-family: 'Poppins', san-serif;
+  font-size: 15px;
+  font-weight: 100;
+  width: 170px;
+  color: gray;
+}
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
