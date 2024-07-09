@@ -22,6 +22,8 @@ Research shows that affirmations can activate brain areas associated with self-r
 3. **User-Friendly Design**: The intuitive interface and seamless saving process make journaling and organizing entries effortless.
 
 
+## 🖌️Prototype on Figma: 
+
 
 ## 🛠 Technologies and Frameworks Used
 1. React
@@ -32,6 +34,7 @@ Research shows that affirmations can activate brain areas associated with self-r
 6. Phi-3 - LLM developed by Microsoft for Contextual Understanding and 
 7. SQLite
 8. Node.js/Express.js
+9. Figma (For UI Design)
 
 
 
