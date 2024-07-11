@@ -1,257 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
-@font-face {
-  font-family: 'Times New Roman Condensed';
-  src: url('./assets/fonts/Times-New-Roman-Condensed.otf') format('opentype');
-}
-
-
-body {
-  background-image: url('./assets/images/2.png');
-  background-size: 100%;
-  background-repeat: repeat-y;
-  background-attachment:fixed;
-  margin: 0;
-  font-family: 'Times New Roman', Times, serif;
-  min-height:100vh;
-  overflow: auto;
-}
-
 #root {
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   position: relative;
-  top: 0;
   left: 50%;
-  transform: translateX(-50%); 
-  box-sizing: border-box; 
+  transform: translateX(-50%);
+  box-sizing: border-box;
   width: 100%;
-  min-height:100vh;
+  min-height: 100vh;
   overflow: auto;
 }
 
-.topmenu {
-  display:flex;
-  justify-content:center;
-  padding: 0% 10%;
-  gap:30%;
-}
-
-.search {
-  background: url('./assets/icon/3.svg') no-repeat center center;
-  background-size: contain;
-  width: 30px;
-  cursor:pointer;
-}
-
-.bar {
-  background: url('./assets/icon/4.svg') no-repeat center center;
-  background-size: contain;
-  width: 30px;
-  cursor: pointer;
-}
-
-
-.logo {
-  height: 6em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-
-.logo, .save-button, .regenerate-button:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-.title-box, .description-box {
-  border: none;
-  background-color: rgba(255, 255, 255, 0.63);
-  border-radius: 5px;
-  font-family: 'Poppins', san-serif;
-  width: 90%;
-}
-
-.title-box{
-  text-align: center;
-  font-size:20px;
-  font-weight:bolder;
-  height: 10%;
-}
-
-.description-container{
-  position:relative;
-  width:100%;
-}
-.description-box{
-  margin: 10px;
-  height: 150px;
-  font-size: 15px;
-  text-align:left;
-  resize:none;
-}
-
-.send-icon {
-  background: url('./assets/icon/1.svg') no-repeat center center;
-  background-size: contain;
-  height: 20px;
-  cursor: pointer;
-}
-
-.heart-icon, .hearted-icon {
-  background-size: contain;
-  height: 20px;
-  cursor: pointer;
-}
-
-.send-icon, .heart-icon, .hearted-icon {
-  position: absolute;
-  width:20px;
-  bottom:13%;
-  right:6%;
-  cursor: pointer;
-}
-
-.heart-icon {
-  background: url('./assets/icon/6.svg') no-repeat center center;
-  background-size: contain;
-}
-
-.hearted-icon {
-  background: url('./assets/icon/5.svg') no-repeat center center;
-  background-size: contain;
-  right: 2%;
-  bottom: 5%;
-}
-
-.button-container{
-  display:flex;
-  justify-content:center;
-  gap:15px;
-}
-
-.save-button, .regenerate-button{
-  border-radius: 15px;
-  padding: 10px 0px;
-  font-family: 'Poppins', san-serif;
-  font-size: 15px;
-  font-weight: 100;
-  width: 170px;
-  color: gray;
-}
-
-.AffirmlySays {
+.App {
   display: flex;
-  gap: 10px;
-  justify-content: left;
-  padding: 0% 5%;
-}
-
-.affirmlylogo {
-  width:50px;
-}
-
-h2 {
-  color: #7C7B7F;
-  font-size: 25px;
-  font-weight: bold;
-  font-style: italic;
-  font-family: 'Times New Roman', Times, serif 
-
-}
-
-.affirmations-container {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content: center;
-  gap: 10px;
-  padding: 0% 5%;
-  overflow-y: auto;
-  height: 50%;
-  max-height: 60vh;
-}
-
-.individual-affirmations {
-  display: flex;
-  border: 2px solid white;
-  background-color: rgba(255, 255, 255, 0.30);
-  padding: 0px;
-  border-radius: 5px;
-  position: relative;
-  font-size: 20px;
-  color: gray;
-  font-family: 'Times New Roman Condensed', Times, serif; 
-  width: 50vh
-}
-
-.heart-icon {
-  bottom: 5%;
-  right: 2%;
-
-}
-
-.popup {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 50%;
+}
+
+.main-container {
   display: flex;
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 3%;
-}
-
-.popup-button {
-  border-radius: 15px;
-  padding: 10px 0px;
-  font-family: 'Poppins', san-serif;
-  font-size: 15px;
-  font-weight: 100;
   width: 100%;
-  /* background-color: gray; */
-  border: 1px solid #99BCCD;
-  color: #99BCCD;
-  cursor: pointer;
-  margin: 5px;
 }
 
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 15px;
+}
 
-.popup-button:hover {
-  filter: drop-shadow(0 0 3em #61dafbaa);
+textarea {
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+.tailor-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
   color: white;
-  background-color: #61dafbaa;
-}
-
-.close {
-  position: fixed;
-  right: 5%;
-  top: 0%;
-  font-size: 30px;
-  color: gray;
+  border: none;
   cursor: pointer;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tailor-button:hover {
+  background-color: #0056b3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.output-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding-left: 50px;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.output {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  border: 1px solid #ccc;
+  font-size: 14px;
 }
