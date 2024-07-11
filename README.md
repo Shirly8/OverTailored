@@ -4,7 +4,7 @@ OverTailored is an innovative tool that uses Gemini AI to convert and tailor res
 
 Once your CV is in LaTeX format, you can use OverTailored's LaTeX compiler to make further customizations. LaTeX compilers provide a user-friendly interface and a wide range of templates, making it easy to create a CV that stands out.
 
-##Why use OverTailored?
+## Why use OverTailored?
 With OverTailored, you can leverage the precision of LaTeX without needing to know how to write in LaTeX code. This saves you time and effort, allowing you to focus on what matters most - presenting your skills and experiences in the best possible light.
 
 ## Features
